@@ -158,7 +158,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT messg, WPARAM wParam, LPARAM lParam)
 
         srand(04010);
         double** T = randmm(n, n);
-        double coef = 1.0 - 2*0.02 - 3*0.005 - 0.25;
+        double coef = 1.0 - 0*0.02 - 8*0.005 - 0.25;
         double** A = mulmr(coef, T);
 
         printf("Matrix:\n");

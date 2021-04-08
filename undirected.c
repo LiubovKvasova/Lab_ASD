@@ -152,7 +152,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT messg, WPARAM wParam, LPARAM lParam)
         double coef = 1.0 - 0*0.02 - 8*0.005 - 0.25;
         double** A = mulmr(coef, T);
 
-        printf("Matrix (non directed):\n");
+        printf("Matrix:\n");
         for (int i = 0; i < n; i++)
         {
             for (int j = 0; j < n; j++)
